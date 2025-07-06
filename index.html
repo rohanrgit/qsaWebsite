@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QSA Capital - Quantitative Systematic Algorithmic</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Styles -->
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -61,6 +65,7 @@
     <header class="bg-black shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="index.html" class="text-2xl font-bold text-white">QSA Capital</a>
+            <!-- Desktop Navigation -->
             <div class="hidden md:flex items-center space-x-8">
                 <a href="about.html" class="text-gray-300 hover:text-white font-medium">About</a>
                 <a href="blog.html" class="text-gray-300 hover:text-white font-medium">Blog</a>
@@ -116,8 +121,6 @@
             </div>
         </section>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
         <!-- Locations Section -->
         <section class="bg-black py-20">
             <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
@@ -132,45 +135,6 @@
                 </div>
                 <div class="md:w-1/2">
                     <img src="https://placehold.co/600x450/1a202c/4a5568?text=Global+Presence" alt="Global Presence" class="rounded-lg shadow-xl w-full">
-=======
-        <!-- Section 2 (Now contains Our Edge content) -->
-        <section class="bg-black py-20">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="section-title">Our Edge</h2>
-                <p class="section-subtitle">Our primary competitive advantage lies in our people, our technology, and our commitment to continuous innovation.</p>
-                <div class="grid md:grid-cols-3 gap-8 mt-12">
-                    <div class="card">
-                        <i class="fas fa-users card-icon"></i>
-                        <h3 class="card-title">Talent</h3>
-                        <p class="card-text">Our team consists of experienced professionals with deep expertise in mathematics, statistics, computer science, and finance.</p>
-                    </div>
-                    <div class="card">
-                        <i class="fas fa-laptop-code card-icon"></i>
-                        <h3 class="card-title">Technology</h3>
-                        <p class="card-text">We leverage a sophisticated, proprietary research and trading platform to develop and execute our strategies.</p>
-                    </div>
-                    <div class="card">
-                        <i class="fas fa-lightbulb card-icon"></i>
-                        <h3 class="card-title">Innovation</h3>
-                        <p class="card-text">We are dedicated to ongoing research and development, constantly refining our models and exploring new sources of alpha.</p>
-                    </div>
->>>>>>> 6fe433f (new index)
-=======
-        <!-- Locations Section -->
-        <section class="bg-black py-20">
-            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-12">
-                    <h2 class="section-title text-left mb-6">Locations</h2>
-                     <p class="text-gray-300 mb-6 text-lg">QSA Capital operates globally, with a presence in key financial centers to effectively manage our strategies and serve our clients.</p>
-                     <div class="space-y-4 text-gray-400">
-                        <p><i class="fas fa-map-marker-alt mr-2 text-blue-500"></i>New York, USA</p>
-                        <p><i class="fas fa-map-marker-alt mr-2 text-blue-500"></i>London, UK</p>
-                        <p><i class="fas fa-map-marker-alt mr-2 text-blue-500"></i>Singapore</p>
-                     </div>
-                </div>
-                <div class="md:w-1/2">
-                    <img src="https://placehold.co/600x450/1a202c/4a5568?text=Global+Presence" alt="Global Presence" class="rounded-lg shadow-xl w-full">
->>>>>>> b1510cb (initial commit)
                 </div>
             </div>
         </section>
@@ -221,13 +185,19 @@
         </div>
     </footer>
 
+    <!-- JavaScript for Mobile Menu -->
     <script>
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
+        // Wait for the document to be fully loaded
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
 
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+            // Check if both elements exist before adding event listener
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
         });
     </script>
 
