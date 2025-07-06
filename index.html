@@ -66,28 +66,28 @@
 </head>
 <body class="text-gray-200">
 
-    <!-- Header & Navigation -->
-    <header class="bg-black shadow-md sticky top-0 z-50">
+    <!-- Header & Navigation - Now overlays the hero image -->
+    <header class="absolute top-0 w-full z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="index.html" class="text-2xl font-bold text-white">QSA Capital</a>
             <!-- Desktop Navigation -->
             <div class="hidden md:flex items-center space-x-8">
-                <a href="about.html" class="text-gray-300 hover:text-white font-medium">About</a>
-                <a href="blog.html" class="text-gray-300 hover:text-white font-medium">Blog</a>
-                <a href="contact.html" class="text-gray-300 hover:text-white font-medium">Contact</a>
+                <a href="about.html" class="text-gray-200 hover:text-white font-medium">About</a>
+                <a href="blog.html" class="text-gray-200 hover:text-white font-medium">Blog</a>
+                <a href="contact.html" class="text-gray-200 hover:text-white font-medium">Contact</a>
             </div>
             <!-- Mobile Menu Button -->
             <div class="md:hidden">
-                <button id="mobile-menu-button" class="text-gray-300 focus:outline-none" aria-label="Toggle Menu">
+                <button id="mobile-menu-button" class="text-gray-200 hover:text-white focus:outline-none" aria-label="Toggle Menu">
                     <i class="fas fa-bars fa-lg"></i>
                 </button>
             </div>
         </nav>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-black px-6 pb-4 border-t border-gray-700">
-            <a href="about.html" class="block py-2 text-gray-300 hover:text-white">About</a>
-            <a href="blog.html" class="block py-2 text-gray-300 hover:text-white">Blog</a>
-            <a href="contact.html" class="block py-2 text-gray-300 hover:text-white">Contact</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-black bg-opacity-90 px-6 pb-4">
+            <a href="about.html" class="block py-2 text-gray-200 hover:text-white">About</a>
+            <a href="blog.html" class="block py-2 text-gray-200 hover:text-white">Blog</a>
+            <a href="contact.html" class="block py-2 text-gray-200 hover:text-white">Contact</a>
         </div>
     </header>
 
@@ -95,7 +95,7 @@
     <main>
         <!-- Hero Section with Background Image -->
         <section class="hero-bg-image text-white">
-            <div class="container mx-auto px-6 md:px-12 lg:px-24 py-32 md:py-48">
+            <div class="container mx-auto px-6 md:px-12 lg:px-24 pt-48 pb-32 md:pt-64 md:pb-48">
                 <div class="max-w-2xl">
                     <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-4">QUANTITATIVE<br>SYSTEMATIC<br>ALGORITHMIC</h1>
                     <p class="text-lg md:text-xl text-gray-200">QSA Capital Manages Positions Across Equity, Commodity, Forex, & Digital Assets in Spot, Margin, Futures, & Options Markets.</p>
@@ -161,9 +161,13 @@
     <footer class="bg-black text-white">
         <div class="container mx-auto px-6 py-12">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div class="col-span-1 md:col-span-1">
-                    <h3 class="text-xl font-bold mb-4">QSA Capital</h3>
-                    <p class="text-gray-400">Quantitative<br>Systematic<br>Algorithmic</p>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">QSA Capital</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Quantitative</li>
+                        <li>Systematic</li>
+                        <li>Algorithmic</li>
+                    </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
